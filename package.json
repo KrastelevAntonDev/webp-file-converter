@@ -1,0 +1,36 @@
+{
+  "name": "webp-file-converter",
+  "version": "0.1.0",
+  "description": "A simple and fast Node.js tool to convert PNG/JPEG to WebP with batch processing and filename preservation.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "webp",
+    "converter",
+    "png",
+    "jpeg",
+    "batch",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Anton Krastelev",
+  "license": "MIT",
+  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "fs-extra": "^11.3.2",
+    "path": "^0.12.7",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
